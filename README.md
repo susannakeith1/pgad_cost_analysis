@@ -35,7 +35,6 @@ Total cost = expected future loss (EFL) + seismic design cost.
 
 ## Notes
 
-* PGA values are in g, Vs30 in m/s, costs in EUR.
-* The hazard curve, building values, design cost function, discount rate (5 %) and time horizon (50 years) are the values from the original analysis. They are set at the top of `pgad_cost.py`, or as arguments (`t`, `discount`).
-* The EAL only includes PGA between 0.2 and 1.9 g, the range of the vulnerability data.
+* The Vs profiles are set randomly through `generate_profiles(...)`. This is set currently to show an example and generate 10 random profiles. In the true application, all possible Vs profiles will already be known so we do not have to randomly generate them.
+* The hazard curve, building values, design cost function, discount rate (5 %) and time horizon (50 years) are the values an example case study. They are set at the top of `pgad_cost.py`, or as arguments (`t`, `discount`).
 * All profiles are assumed equally likely. The value of information is for perfect information.
